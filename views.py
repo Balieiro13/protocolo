@@ -92,7 +92,13 @@ class RequerimentoOutrosUpdate(CrispyUpdateView):
 
 # Resto
 def index(request):
-    return render(request, 'protocolo/index.html', {})
+    aluno_lista = Aluno.objects.all().count
+
+    context = {
+        'aluno_lista': aluno_lista
+    }
+
+    return render(request, 'protocolo/index.html', context)
 
 def protocoloavulso_novo(request):
     if request.method == 'POST':

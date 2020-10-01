@@ -1,5 +1,11 @@
-{% extends 'protocolo/base.html' %}
+{% extends 'protocolo/base_gerenic.html' %}
 
 {% block content %}
-  <h1>Index</h1>
+  <h1> Protocolo Local Home </h1>
+  <p>Bem vindo ao Protocolo, um site para protocolar gente da USP.</p>
+  <h2> Conteúdo Dinâmico</h2>
+  <p> Temos um total de: </p>
+  <ul>
+    <li> <strong> Alunos:</strong>{{ aluno_lista }}</li>
+  </ul>
 {% endblock %}

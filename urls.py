@@ -5,6 +5,7 @@ from . import views
 from .filters import RequerimentoFilter
 
 # precisa adicionar o include no urls.py do django
+app_name='protocolo'
 urlpatterns = [
     path('', views.index, name='index'),
 
